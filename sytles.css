@@ -1,0 +1,158 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--stone-100);
+  font-family: "Outfit";
+  color: var(--stone-600);
+  line-height: 1.9rem;
+}
+
+b {
+  font-weight: 700;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--stone-150);
+  margin: 1rem 1.5rem;
+}
+
+.header__title,
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
+  font-family: "Young Serif";
+}
+
+.main__card {
+  background-color: var(--white);
+  width: clamp(290px, 45vw, 900px);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__img {
+  width: calc(100% - 2rem);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0px 1rem;
+  color: var(--stone-900);
+}
+
+.header__description {
+  font-weight: 400;
+  margin: 1rem 1rem;
+}
+
+.section__preparation {
+  margin: 1rem 3rem;
+}
+
+.preparation__title {
+  color: var(--rose-800);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+b {
+  color: var(--stone-600);
+  font-weight: 600;
+}
+
+.ingredients__title {
+  font-size: 1.5rem;
+  margin-top: 1.7rem;
+  margin-left: -2rem;
+  margin-bottom: 1rem;
+  color: var(--brown-800);
+}
+
+.instructions__title {
+  color: var(--brown-800);
+  font-size: 1.5rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.instructions__list {
+  margin: 1rem 3rem;
+}
+
+.instructions__list-item {
+  margin: 1rem 0;
+}
+
+.nutrition__title {
+  color: var(--brown-800);
+  font-size: 1.5rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.nutrition__description {
+  font-weight: 400;
+  margin: 1rem 1rem;
+}
+
+.nutrition__table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.table__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+
+.table__item--brown {
+  color: var(--brown-800);
+  font-weight: 500;
+}
+
+@media (max-width: 426px) {
+  .main__card {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .header__img {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-radius: 0;
+  }
+}
